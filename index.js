@@ -52,3 +52,22 @@ document.getElementById("clear-btn").addEventListener("click",function(){
             const dashboard = document.getElementById('dashboard-container');
             dashboard.innerHTML = "";
 })
+
+
+// copy features 
+const copyBtns = document.getElementsByClassName('copy')
+for(const copy of copyBtns){
+    copy.addEventListener('click',function(){
+        const serviceNumber = copy.parentNode.parentNode.children[3].innerText;
+        const copyCount = Number(document.getElementById("copy").innerText);
+
+        // console.log(serviceNumber);
+        alert(`${serviceNumber} is Copied to Clipboard`);
+        navigator.clipboard.writeText(serviceNumber);
+        let increaseCopyCount = copyCount+1;
+        document.getElementById("copy").innerText = increaseCopyCount;
+        
+        
+    })
+    
+}
