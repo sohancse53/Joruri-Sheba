@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joruri Sheba</title>
+    <!-- font awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- daisy and tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <!-- navbar section  -->
+      <nav class="bg-white flex justify-between px-10 py-5">
+        <!-- left  -->
+        <div class="w-48 flex items-center gap-1">
+          <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="" />
+          <h1 class="text-green-800 font-bold">Emergency <br />Service</h1>
+        </div>
+        <!-- right  -->
+        <div class="flex items-center gap-3">
+          <button id="heart" class="btn bg-green-100 rounded-2xl">
+            <span>0</span
+            ><img class="w-5 h-5" src="./assets/heart.png" alt="" />
+          </button>
+          <button id="coin" class="btn bg-green-100 rounded-2xl">
+            <span>100</span
+            ><img class="w-5 h-5" src="./assets/coin.png" alt="" />
+          </button>
+          <button id="copy" class="btn bg-green-600 text-white rounded-2xl">
+            <span>0</span>copy
+          </button>
+        </div>
+      </nav>
+
+      <!-- banner section -->
+      <div
+        class="flex flex-col justify-center items-center gap-5 py-5 px-2 bg-gradient-to-r from-green-900 via-green-700 to-green-900 text-white"
+      >
+        <img class="w-48" src="./assets/logo-dark.png" alt="Loading">
+        <h1 class="text-3xl font-bold">Emergency Service Directory</h1>
+        <p>Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+    </div>
+    </header>
+<!-- header section ends -->
+
+
+<!-- main section starts -->
+ <main class="bg-green-100">
+    <!-- card container -->
+     <section id="card-container">
+        <!-- card  -->
+        <div>
+            <div>
+                <img src="./assets/emergency.png" alt="Loading">
+                
+            </div>
+        </div>
+     </section>
+ </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
