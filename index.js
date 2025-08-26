@@ -34,7 +34,7 @@ for(const call of callBtns){
         const time = new Date();
         const div = document.createElement('div')
         div.innerHTML = ` <div
-            class="bg-gray-200 mt-2 rounded-xl p-2 flex flex-col lg:flex-row lg:justify-between items-center"
+            class="bg-gray-100 mt-2 rounded-xl p-2 flex flex-col lg:flex-row lg:justify-between items-center"
           >
             <div>
               <h1 class="font-bold">${serviceName}</h1>
@@ -46,3 +46,9 @@ for(const call of callBtns){
 
     })
 }
+
+// clear history feature 
+document.getElementById("clear-btn").addEventListener("click",function(){
+            const dashboard = document.getElementById('dashboard-container');
+            dashboard.innerHTML = "";
+})
