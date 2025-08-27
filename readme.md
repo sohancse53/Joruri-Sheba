@@ -22,4 +22,4 @@
  **sol:**
      1. preventDefault() stops the default behavior of the browser like form loading on submit button click.
      2. stopPropagation() stops the event bubbling like it does not bubbled the event to its immediate parent.
-     3. the difference between preventDefault() and stopPropagation() is preventDefault() does not bubble the event on the other hand stopPropagation() does not stops the default behavior.
+     3. the difference between preventDefault() and stopPropagation() is preventDefault() does not bubble the event, on the other hand stopPropagation() does not stops the default behavior.
