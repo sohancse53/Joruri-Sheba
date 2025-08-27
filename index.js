@@ -26,7 +26,7 @@ for(const call of callBtns){
             return;
         }
 
-        alert(`calling to ${serviceName} number is ${serviceNumber}`);
+        alert(`📞 Calling  ${serviceName} service ${serviceNumber}`);
         
         document.getElementById("coin").innerText = newCoin;
         
@@ -38,7 +38,7 @@ for(const call of callBtns){
           >
             <div>
               <h1 class="font-bold">${serviceName}</h1>
-              <p class="text-gray-800">${serviceNumber}</p>
+              <p class="text-gray-800 ">( ${serviceNumber} )</p>
             </div>
             <h1 class="font-semibold">${time.toLocaleTimeString()} </h1>
           </div>`
