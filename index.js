@@ -29,18 +29,24 @@ for(const call of callBtns){
         alert(`📞 Calling  ${serviceName} service ${serviceNumber}`);
         
         document.getElementById("coin").innerText = newCoin;
-        
+        //  adding call history 
         const dashboard = document.getElementById('dashboard-container');
         const time = new Date();
+        const formateTime = {
+            hr:'2-digit',
+            min:'2-digit',
+            sec: '2-digit',
+            hour12:true
+        }
         const div = document.createElement('div')
         div.innerHTML = ` <div
-            class="bg-gray-100 mt-2 rounded-xl p-2 flex flex-col lg:flex-row lg:justify-between items-center"
+            class="bg-gray-100 mt-2 rounded-xl p-2  flex flex-col lg:flex-row lg:justify-between lg:items-center"
           >
             <div>
-              <h1 class="font-bold">${serviceName}</h1>
-              <p class="text-gray-800 ">( ${serviceNumber} )</p>
+              <h1 class="font-semibold text-sm">${serviceName}</h1>
+              <p class="text-gray-800 font-bold">${serviceNumber}</p>
             </div>
-            <h1 class="font-semibold">${time.toLocaleTimeString()} </h1>
+            <h1 class="font-semibold  text-sm text-gray-500">${time.toLocaleTimeString([],formateTime)} </h1>
           </div>`
           dashboard.append(div)
 
